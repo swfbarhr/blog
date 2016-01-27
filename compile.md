@@ -55,4 +55,4 @@ function foo(){
 
 ##### 总结
 了解了JavaScript的编译规则，应该对它会有不同的认识。其实JavaScript是一门被精心设计的语言，其优势不言而喻。当今有很多人吐槽JavaScript，吐槽JavaScript各种令人讨厌的坑。其实学习和工作哪个不是不断的在填自己知识上填坑呢？
-另外本文也会在我的[博客](http://www.sunweifeng.cn/javascript-compile/)上同步更新。
+另外本文也会在我的[博客](http://www.sunweifeng.cn/javascript-compile/)上同步更新，欢迎访问。
