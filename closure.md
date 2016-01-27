@@ -94,4 +94,4 @@ $('#dvTest').click(function(){
 这是一段大家都很熟悉的JQuery事件绑定代码，里面也有一个非常明显的闭包。还有很多的例子，可能大家在编写代码的过程中已经很熟练地使用了闭包，自己却没有发现。现在去回顾下自己的代码，从中找出闭包！
 
 ##### 总结
-讲到这里，我们就把闭包的概念叙述完了。其实也不复杂，很多人一直搞不清楚闭包，并不是因为闭包有多难，只是没有用心去理解。希望我上面的描述能帮助大家理解闭包，拥抱JavaScript。下一篇我们就来谈谈我在[JavaScript之作用域](https://github.com/swfbarhr/blog/blob/master/scope.md)一文中提到的JavaScript编译。另外本文也会在我的[博客](http://www.sunweifeng.cn/javascript-closure/)上同步更新。
+讲到这里，我们就把闭包的概念叙述完了。其实也不复杂，很多人一直搞不清楚闭包，并不是因为闭包有多难，只是没有用心去理解。希望我上面的描述能帮助大家理解闭包，拥抱JavaScript。下一篇我们就来谈谈我在[JavaScript之作用域](https://github.com/swfbarhr/blog/blob/master/scope.md)一文中提到的JavaScript编译。另外本文也会在我的[博客](http://www.sunweifeng.cn/javascript-closure/)上同步更新，欢迎访问。
