@@ -2,7 +2,7 @@
 相信很多写了很多JavaScript代码的老程序猿都知道有闭包这个概念，但是如果真的要大家用语言来描述闭包的话，很多程序猿都吱吱呜呜说不清楚（包括很大一部分前端攻城狮）。闭包简单来讲就是：当函数记住并访问所在作用域时，就产生了闭包。
 
 ##### 示例
-```
+```js
 function foo(){
   var a = 123;
 
@@ -19,7 +19,8 @@ console.log(baz()); // 123
 
 ##### JavaScript中闭包的实现原理
 要知道闭包不是JavaScript独有的，其他语言像C#、JAVA都有闭包的概念。但是各自的实现原理是不一样的，其他语言暂且不论，JavaScript中闭包的实现其实就是靠的作用域链（就是ES5中的词法环境）。在JavaScript作用域一文中我简单地提到过作用域链的概念，现在我就来详细的解读下什么是作用域链，它的形成过程和实现闭包的方法。先思考一下代码：
-```
+
+```js
 var arg1, foob;
 
 arg1 = 'world';
@@ -51,7 +52,7 @@ foob('Bob'); // hello Bob
 ##### 闭包的应用
 前面已经介绍了什么是闭包以及闭包的实现原理，那闭包在我们实际编码过程中到底有怎样的用途呢？
 示例1：
-```
+```js
 var firFunc, secFunc;
 
 function func1(arg1){
@@ -68,7 +69,7 @@ console.log(secFunc('Lucy')); // hello Lucy
 ```
 我们可以利用闭包来暂时记录参数（例如：配置项、数据库连接等）。就是这么的优雅！就是这么酸爽！
 示例2：
-```
+```js
 function foo(logInfo){
   setTimeout(function(){
     console.log(logInfo);
@@ -79,7 +80,7 @@ foo('pizza'); // pizza
 ```
 setTimeout大家都很熟悉：延迟指定的时间执行代码。这里也涉及到了一个闭包，setTimeout的第一个参数（function）记住了foo的作用域内的变量logInfo。
 示例3：
-```
+```js
 var isIE = true;
 
 $('#dvTest').click(function(){
