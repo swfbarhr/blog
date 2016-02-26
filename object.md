@@ -1,7 +1,7 @@
 ##### 便捷的object对象
 在通常的开发过程中，我们很多时候都会用到object对象。例如：传递object参数、可选择的配置项、数据库输出对象，都可以使用object。这样做使得我们的程序简洁、易用、可扩展。需要使用时，就像如下代码：
 
-```
+```js
 function getUer(name, age, country){
   var user;
 
@@ -28,7 +28,7 @@ user = {...}是大家常用的一种定义对象的方式，这样非常的方�
 + 第一个参数是必传参数，指定即将创建的对象的prototype（原型，这个我下一篇博客会详细介绍，这里就不赘述）。
 + 第二个参数一个可选参数，可以设置我们需要初始化给即将创建的对象的属性及对属性的控制。
 
-```
+```js
 var newObj = Object.create({}, {
     'a': {
       value: 'this is a',
@@ -45,7 +45,7 @@ console.log(newObj); // {a: 'this is a'}
 
 + configurable表示可否对当前对象进行配置。默认情况下使用Object.create创建的对象是不可配置的，也就是说configurable默认是false。
 
-```
+```js
 var newObj = Object.create({}, {
     'a': {
       value: 'this is a',
@@ -64,7 +64,7 @@ Object.defineProperty(newObj, 'a', {
 
 + enumerable表示该属性不可枚举。如果需要枚举一个object对象，可以使用for...in方法，一旦我们把当前属性设置成false，for...in将访问不到此属性。
 
-```
+```js
 var user = Object.create({}, {
     'name': {
       value: 'Lucy',
@@ -90,7 +90,7 @@ for(p in user){
 
 + writable表示是否可以被赋值运算符改变。
 
-```
+```js
 (function(){
   "use strict";
 
@@ -118,7 +118,7 @@ for(p in user){
 ##### 引用传递
 需要提到的是，如果需要在函数中传递object，请记住我们传递的永远是object的引用地址，如果在函数内部对该参数进行了修改，所有引用该参数的代码都会受到影响。
 
-```
+```js
 A.js:
   var setting = {
     user: 'admin',
@@ -145,7 +145,7 @@ B.js（B.js引用了A.js）
 
 我们看到，当我们调用setSettings函数时，A文件的setting对象被修改了，然后后面一个getSettings就被影响了。这个习惯性的错误在我们编写JavaScript时很容易犯，并且有的时候这个错误是致命的。所以如果需要拷贝对象，请Object.assign或第三方库（lodash、underscore等）提供的拷贝函数。这里我们来介绍下ES2015中的新方法：Object.assign，将刚刚的代码小小修改下
 
-```
+```js
 A.js:
   var setting = {
     user: 'admin',

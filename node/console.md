@@ -4,7 +4,7 @@
 ##### console.log
 console.log（console是个全局变量）是node最常用的一个日志打印函数，此函数与C和C++中的printf很像，可以设置占位符，并且与前2者一致。
 
-```
+```js
 console.log('娜塔莎是个%s', '好孩子'); // 娜塔莎是个好孩子
 
 var info = {
@@ -17,7 +17,7 @@ console.log(info); // { status: 200, msg: 'everything is ok' }
 
 console.log的参数是可变的，可以有很多个，就像这样：
 
-```
+```js
 var a = 'hello Peter';
 var b = 'hi Lily';
 
@@ -26,7 +26,7 @@ console.log(a, b); // hello Peter hi Lily
 
 这样就可以打印多个变量或者表达式的结果，当我们在调试程序的时候（特别是需要同时打印多个变量的值）特别有用。就如上面演示的一样，console.log方法可以打印数字、字符串、对象。可以说console.log方法非常强大，但是它不是万能的，当我们打印的对象的树层次太深的话就会出现意料之外的结果。
 
-```
+```js
 var info = {
   status: 200,
   msg: {
@@ -48,7 +48,7 @@ console.log(info); // { status: 200,  msg: { user: { name: 'Peter', country: 'Ja
 
 可以看到，当我们打印info变量时，到第四层级“company”只打印出了一个[object]。说明console.log在打印object的时候，最多只支持到第三层级，如果需要打印对象所有层级的话，我们可以与util.inspect方法配合使用（之后我们讲到util模块的时候会讲到这个方法）。
 
-```
+```js
 var util = require('util');
 
 var info = {
@@ -87,7 +87,7 @@ console.log(util.inspect(info, {depth: null})); // { status: 200,
 ##### console.error
 此方法如果我们没有在运行时指定输出文件（包括一般输出和错误输出），在我们运行node的时候可以手动指定日志和错误的输出文件，console.error方法就会输出到错误文件中。
 
-```
+```js
 node app.js 2> error.log | tee info.log
 ```
 
@@ -99,7 +99,7 @@ console.warn的实现与console.error是一样的，console.info的实现与cons
 ##### console.dir
 console.dir方法就是与我们在上面介绍的util.inspect方法的效果一致。
 
-```
+```js
 var info = {
   status: 200,
   msg: {
@@ -123,7 +123,7 @@ console.dir(info); // { status: 200,  msg: { user: { name: 'Peter', country: 'Ja
 ##### console.time、console.timeEnd
 一般console.time与console.tiemEnd成对出现，用于记录两者之间的代码运行时间
 
-```
+```js
 console.time('for-time');
 
 for(var i = 0;i < 10000000;i++){

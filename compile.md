@@ -19,7 +19,7 @@
 
 ##### 变量申明提升
 既然已经讲到了这里，也不得不提到这个概念。其实在JavaScript中，变量申明是会被提升到当前作用域的最顶部，思考一下代码：
-```
+```js
 function foo(){
   console.log(a);
 
@@ -29,7 +29,7 @@ function foo(){
 foo(); // undefined
 ```
 但是按照编译规则，在执行到console.log(a)时，代码应该会报错才对，现在为什么又打印出“undefined”呢，打印出“undefined”很显然变量已经被申明了。上面我有提到，JavaScript引擎会对我们的代码进行优化、整理，真正编译器拿到的代码是这个样子的：
-```
+```js
 function foo(){
   var a;
 
@@ -42,7 +42,7 @@ foo(); // undefined
 ```
 就像我们上面说到的一样，申明赋值这个操作，JavaScript会分成2个步骤完成：申明和赋值。
 其实不止变量申明的提升，函数的申明也会提升，思考一下代码：
-```
+```js
 foo(); // 3
 
 function foo(){

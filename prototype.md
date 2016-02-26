@@ -7,7 +7,7 @@
 ##### 原型链
 原型链跟之前我在[JavaScript之作用域](https://github.com/swfbarhr/blog/blob/master/scope.md)一文中提到的作用域链一样，都是逐层查找属性的。
 
-```
+```js
 var a = {
   group: 'administrator'
 }
@@ -30,7 +30,7 @@ console.log(b.group); // administrator
 ##### 引用另一个对象的好处
 很多人会问，好好的对象，为什么无缘无故地要引用其他对象呢。一个对象引用另一个对象后，可以使用目标对象上的属性和方法。
 
-```
+```js
 function Vehicle(wheel){
   this.wheel = wheel;
 }
@@ -71,7 +71,7 @@ console.log(buickCar.getWheel()); // 14
 
 + 如果A上有属性a，并且属性a的writable不为false时，这时会在B上新增一个属性a，并且B.a会屏蔽A.a
 
-```
+```js
 var A = Object.create({}, {
   'a': {
     value: 'This is A',
@@ -93,7 +93,7 @@ console.log(Object.getPrototypeOf(B)); // {a: "This is A"}
 
 我们可以看到，当B上没有属性a的时候，B.a其实是B的原型上的属性即“this is A”。当我们给B.a赋值后，B.a就是我们所期望的“This is B”，也就是说此时出现了屏蔽现象。原型上的a属性被对象B的a属性屏蔽了。但是如果原型上的a属性的writable是false时，又会发生什么事情呢。
 
-```
+```js
 (function(){
     "use strict";
 
@@ -118,7 +118,7 @@ console.log(Object.getPrototypeOf(B)); // {a: "This is A"}
 
 + 如果原型上正好有一个setter，那么会直接设置这个setter。
 
-```
+```js
 var val = 'This is A';
 
 var A = Object.create({}, {
@@ -149,7 +149,7 @@ A上存在一个setter，我们在执行“B.a = 'this is B';”语句的时候�
 ##### 委托
 我要说的委托，不是.NET中的事件委托。这里的委托是与JavaScript的“类”（其实JavaScript根本没有真正的类，一切都是障眼法，都是模仿的）有一致的功能，但是又号称更加的优雅。
 
-```
+```js
 var computer = {
   screen: '26 inch',
   cpu: 'i7',

@@ -1,7 +1,7 @@
 ##### buf.toJSON()
 将Buffer实例转换成JSON形式的数组。
 
-```
+```js
 var bfJson = new Buffer('hello');
 
 console.log(bfJson.toJSON()); // [ 104, 101, 108, 108, 111 ]
@@ -12,7 +12,7 @@ console.log(new Buffer(bfJson.toJSON()).toString()); // hello
 ##### Buffer.isBuffer(obj)
 判断对象是否是Buffer实例
 
-```
+```js
 console.log(Buffer.isBuffer({})); // false
 console.log(Buffer.isBuffer(new Buffer(3))); // true
 console.log(Buffer.isBuffer(new Buffer('test'))); // true
@@ -23,7 +23,7 @@ console.log(Buffer.isBuffer(123)); // false
 ##### Buffer.byteLength(string, [encoding])
 获取字符串的字节数
 
-```
+```js
 console.log(Buffer.byteLength('hello')); // 5
 console.log(Buffer.byteLength('你好')); // 6
 ```
@@ -31,7 +31,7 @@ console.log(Buffer.byteLength('你好')); // 6
 ##### Buffer.concat(list, [totalLength])
 拼接Buffer实例
 
-```
+```js
 var buf1 = new Buffer('小明');
 var buf2 = new Buffer('今年');
 var buf3 = new Buffer('5');
@@ -52,7 +52,7 @@ console.log(bufTotal.toString()); // 小明今年5岁
 ##### buf.copy(targetBuffer, [targetStart], [sourceStart], [sourceEnd])
 将Buffer实例拷贝到目标对象上
 
-```
+```js
 var bfSource = new Buffer('可可是个乖宝宝');
 var bfTarget = new Buffer(bfSource.length);
 
@@ -64,7 +64,7 @@ console.log(bfTarget.toString()); // 可可是个乖宝宝
 ##### buf.slice([start], [end])
 取Buffer实例片段（不是将原始数据中片段复制出来，而是直接引用。所有当原数据改变时，取出的片段也将随之改变）
 
-```
+```js
 var bufFull = new Buffer('abcde', 'ascii');
 var bufSlice = bufFull.slice(2, 3);
 
@@ -80,7 +80,7 @@ console.log(bufSlice.toString('ascii')); // a
 ##### buf.readUInt8(offset, [noAssert])
 读取一个8位的无符号整型
 
-```
+```js
 var bfRead = new Buffer(1);
 
 bfRead[0] = 0x12;
@@ -115,7 +115,7 @@ buf.readUInt8只读取一个8位无符号整数，并且可以指定读取的位
 ##### buf.writeUInt8(value, offset, [noAssert])
 将值写入指定Buffer实例的指定位置
 
-```
+```js
 var bfWrite = new Buffer(1);
 
 bfWrite.writeUInt8(0x12, 0);
@@ -144,7 +144,7 @@ console.log(bfWrite); // <Buffer 12>
 ##### buf.fill(value, [offset], [end])
 向Buffer实例中填充指定的值
 
-```
+```js
 var bfFill1 = new Buffer(1);
 var bfFill2 = new Buffer(6);
 

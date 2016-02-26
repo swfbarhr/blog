@@ -8,7 +8,7 @@
 ##### 引入HTTP模块
 在node[官方API](https://nodejs.org/dist/latest-v5.x/docs/api)中，第一句话是这么说的：“To use the HTTP server and client one must require('http')”，如果想要使用HTTP的服务器端和客户端的方法，首先第一步我们需要使用“require('http')”引入HTTP模块。
 
-```
+```js
 var http = require('http');
 ```
 
@@ -17,7 +17,7 @@ var http = require('http');
 ##### 创建一个简单的Web Server
 在HTTP模块中，node提供给我们一个createServer方法，来创建一个Web Server。代码可以这样写：
 
-```
+```js
 var http = require('http');
 var server = http.createServer();
 
@@ -46,7 +46,7 @@ server.listen(88, function() {
 
 当我们请求了服务器的88端口后，服务器会响应给我们“OK”字符串。到此我们的简单Web Server已经搭建完成，但是此时我们的代码还不具备任何业务能力，但是我们只要把代码稍稍修改下，就可以入眼了：
 
-```
+```js
 var url = require('url');
 var http = require('http');
 var server = http.createServer();
@@ -100,7 +100,7 @@ server.listen(88, function() {
 
 + 首先我们引入了一个新的模块：“url”。这个模块主要帮助我们将整理请求url中的信息即url.parse方法（如果有兴趣，你可以去研究下url的所有API，其实就几个）。url.parse转换完成之后，url参数信息就变成这样了：
 
-```
+```js
 {
     protocol: null,
     slashes: null,
@@ -128,7 +128,7 @@ server.listen(88, function() {
 ##### http.request
 上面讲了那么多，其实都是在将HTTP Server的内容，既然node那么强大，当然除了可以作为HTTP Server之外，也可以做HTTP Client。现在就以我们刚刚建立的服务端为服务器，利用http.request来请求刚刚的服务器，看看会发生什么事情。
 
-```
+```js
 var http = require('http');
 
 var option, req;

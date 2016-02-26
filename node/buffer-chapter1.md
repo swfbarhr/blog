@@ -4,7 +4,7 @@ JavaScript原生支持Unicode，并且对Unicode非常友好。但是，纯JavaS
 ##### 全局变量
 与一般的node模块不同，Buffer在node中是全局存在的（这也说明了Buffer模块在node中的重要性）。既然Buffer是全局变量，那么我们不需要显示的引用，直接使用即可：
 
-```
+```js
 var bfData = new Buffer(4);
 ```
 
@@ -17,7 +17,7 @@ var bfData = new Buffer(4);
 + base64
 + hex
 
-```
+```js
 var bfASCII = new Buffer('abcd', 'ascii');
 console.log(bfASCII); // <Buffer 61 62 63 64>
 console.log(bfASCII.toString()); // abcd
@@ -32,7 +32,7 @@ console.log(bfHex.toString('hex')); // b4c127c3d7
 
 + new Buffer(size) 创建指定大小的Buffer实例
 
-```
+```js
 var bfSize = new Buffer(6);
 
 bfSize.write('abcdef', 0, 6, 'utf8');
@@ -43,7 +43,7 @@ console.log(bfSize.toString('utf8')); // abcdef
 
 + new Buffer(array) 给定指定数组创建Buffer实例
 
-```
+```js
 var bfArray = new Buffer(['97', 98]);
 
 console.log(bfArray.toString('utf8')); // ab
@@ -51,7 +51,7 @@ console.log(bfArray.toString('utf8')); // ab
 
 + new Buffer(str, [encoding]) 使用指定的字符串和编码格式（默认为utf8）创建新的Buffer实例
 
-```
+```js
 var bfStr = new Buffer('你好', 'utf8');
 
 console.log(bfStr); // <Buffer e4 bd a0 e5 a5 bd>
@@ -61,7 +61,7 @@ console.log(bfStr.toString('utf8')); // 你好
 ##### Buffer.isEncoding(encoding)
 此方法可以方便的知晓给定的字符编码是否在node支持范围内：
 
-```
+```js
 console.log(Buffer.isEncoding('utf8')); // true
 console.log(Buffer.isEncoding('ascii')); // true
 console.log(Buffer.isEncoding('hex')); // true
@@ -74,7 +74,7 @@ console.log(Buffer.isEncoding('utf108')); // false
 ##### buf.write(string, [offset], [length], [encoding])
 将指定字符串写入到Buffer实例，并且可以指定从偏移量、写入长度和编码
 
-```
+```js
 var bfWrite = new Buffer(6);
 
 bfSize.write('abcdef', 0, 5, 'utf8');
@@ -86,7 +86,7 @@ console.log(bfWrite.toString('utf8')); // abcde
 ##### buf.toString([encoding], [start], [end])
 将Buffer实例转换成字符串
 
-```
+```js
 var bfToStr = new Buffer(2);
 
 bfToStr[0] = 108;
