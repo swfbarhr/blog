@@ -99,7 +99,7 @@ function foo(iam){
   console.log(iam +　this.name);
 }
 
-foo.call({name: '小明'}, '我的名字叫'); // 我的名字叫明
+foo.call({name: '小明'}, '我的名字叫'); // 我的名字叫小明
 foo.apply({name: '小花'}, ['我的名字叫']); // 我的名字叫小花
 ```
 
