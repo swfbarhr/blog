@@ -38,7 +38,7 @@ console.log(util.format(1,2,3); // 1 2 3
 ```
 
 ##### util.debug(string)
-在打印的字符串之前添加“DEBUG:”字样，就如我在[Node.js之console](https://www.sunweifeng.cn/node-console/)一文中提到的一样，util.debug会将输出的信息记录到错误日志文件中去，如果没有指定错误文件，那么就会直接输出到控制台
+在打印的字符串之前添加“DEBUG:”字样，就如我在[Node.js之console](https://github.com/swfbarhr/blog/blob/master/node/console.md)一文中提到的一样，util.debug会将输出的信息记录到错误日志文件中去，如果没有指定错误文件，那么就会直接输出到控制台
 
 ```js
 var util = require('util');
@@ -97,9 +97,9 @@ util.log('我是一条日志！'); // 29 Feb 15:50:34 - 我是一条日志！
 ```
 
 ##### util.inspect(object, [options])
-这个函数我们在[Node.js之console](https://www.sunweifeng.cn/node-console/)一文中也提到过，功能我就不多做介绍。第一个参数应该没什么异议，第二个参数是可选配置项，通过传入不同的option值，会有不同的效果，下面就来介绍下这个option：
+这个函数我们在[Node.js之console](https://github.com/swfbarhr/blog/blob/master/node/console.md)一文中也提到过，功能我就不多做介绍。第一个参数应该没什么异议，第二个参数是可选配置项，通过传入不同的option值，会有不同的效果，下面就来介绍下这个option：
 
-+ showHidden表示是否要返回不可枚举选项，我们在[JavaScript之object](https://www.sunweifeng.cn/javascript-object/)提到过，object对象的属性可以设置为“不可枚举”，这样我们的for...in结构就不能访问了。这里也是一样，showHidden默认是false，也就是说使用util.inspect时，默认不返回不可枚举属性的：
++ showHidden表示是否要返回不可枚举选项，我们在[JavaScript之object](https://github.com/swfbarhr/blog/blob/master/object.md)提到过，object对象的属性可以设置为“不可枚举”，这样我们的for...in结构就不能访问了。这里也是一样，showHidden默认是false，也就是说使用util.inspect时，默认不返回不可枚举属性的：
 
 ```js
 var util = require('util');
@@ -122,7 +122,7 @@ console.log('strObjShow is %s', strObjShow); // strObjShow is { enumerable_prop:
 console.log('strObjHide is %s', strObjHide); // strObjHide is { enumerable_prop: 'a' }
 ```
 
-+ depth表示深度，我们在[Node.js之console](https://www.sunweifeng.cn/node-console/)介绍过，这里就不再赘述。
++ depth表示深度，我们在[Node.js之console](https://github.com/swfbarhr/blog/blob/master/node/console.md)介绍过，这里就不再赘述。
 
 + colors 可以在控制台输出有颜色的对象（并且颜色是可以自定义的）
 
