@@ -26,6 +26,7 @@
 + [Node.js之util](https://github.com/swfbarhr/blog/blob/master/node/util.md)
 + [Node.js之events](https://github.com/swfbarhr/blog/blob/master/node/events.md)
 + [Node.js之Path](https://github.com/swfbarhr/blog/blob/master/node/path.md)
++ [Node.js之Query Strings&URL](https://github.com/swfbarhr/blog/blob/master/node/qs_url.md)
 
 ##### 联系我
 +  邮箱：swfbarhr@gmail.com
