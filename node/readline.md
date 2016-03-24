@@ -193,4 +193,4 @@ rl.on('SIGINT', function(){
 
 
 ##### 总结
-此模块不是一个非常常用的模块，但是我们可以利用此模块写出很好玩的程序，例如：一个简单的终端程序，或者可以整一下不懂程序的同学。另外本文也会在我的[Github](https://github.com/swfbarhr/blog/blob/master/node/readline.md)上同步更新，欢迎star和issue。
+此模块不是一个非常常用的模块，但是我们可以利用此模块写出很好玩的程序，例如：一个简单的终端程序，或者可以整一下不懂程序的同学。另外本文也会在我的[博客](https://www.sunweifeng.cn/node-readline/)上同步更新，欢迎访问。
