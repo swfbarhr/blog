@@ -2,7 +2,7 @@
 近一段时间工作太忙，并且在研究docker相关的技术，好久没更新博客了。今天趁任务完成的早，在公司补上一篇。今天要讲的这个模块，让我瞬间就回到了刚学C#的时候，做一些小程序逗同学的年代。今天我要介绍的模块是Readline（记得C#考试的时候Console.ReadLine这个方法我是运用了我的英语知识拼出来的，现在想想都是泪呀！）
 
 ##### Readline
-这个模块可以读取stream，比如说process.stdin。以前对stdin也是不太理解，最近研究docker就对stdin概念稍稍了解了一下下。std是standard（标准）的缩写，in就是输入，组合起来解释就是标准输入，而stdout我的理解就是标准输出（见识浅薄，大神勿喷）。而Readline可以读取process.stdin，我们就可以利用这一点，是的程序通过控制台的标准输入输出与用户进行简单的交互。
+这个模块可以读取stream，比如说process.stdin。以前对stdin也是不太理解，最近研究docker就对stdin概念稍稍了解了一下下。std是standard（标准）的缩写，in就是输入，组合起来解释就是标准输入，而stdout我的理解就是标准输出（见识浅薄，大神勿喷）。而Readline可以读取process.stdin，我们就可以利用这一点，使得程序通过控制台的标准输入输出与用户进行简单的交互。
 
 ```js
 var readline = require('readline');
