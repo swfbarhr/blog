@@ -9,10 +9,11 @@
 
 ##### 生成代码
 在这阶段，编译器根据生成的“抽象语法树”来生成计算机可以识别的指令。在从JavaScript到机器指令之间，JavaScript引擎还做了很多事情，以var a = 0;为例：
-其实这条语句，JavaScript编译器会分为2个步骤执行：
+其实这条语句，JavaScript编译器会分为2个步骤执行（感谢[TylerPeng](https://github.com/TylerPeng)的提醒）：
 
-+ var a;此时，JavaScript引擎会询问当前作用域中是否已经申明了a变量，如果没有则询问当前作用域的上级（此过程与我在[JavaScript之闭包](https://github.com/swfbarhr/blog/blob/master/closure.md)一文中类似）。如果在此过程中找到了a已经申明，那么编译器会忽略此次申明；如果最终都没有找到a的身影，那么编译器会在当前作用域中申明一个a变量。
-+ a = 0;赋值时，也会进行类似的步骤。如果没有找到a，那么就会报错；如果找到了a，那么就会直接使用。
++ var a;此时，JavaScript引擎会询问当前作用域中是否已经申明了a变量，如果a已经申明，那么编译器会忽略此次申明；如果没有找到a的身影，那么编译器会在当前作用域中申明一个a变量。
+
++ a = 0;赋值时，询问当前作用域中是否已经申明了a变量，如果没有则询问当前作用域的上级（此过程与我在[JavaScript之闭包](https://github.com/swfbarhr/blog/blob/master/closure.md)一文中类似）。如果最终没有找到a，那么就会报错；如果找到了a，那么就会直接使用。
 
 ##### 其他的事
 其实JavaScript引擎除了基本的3个编译步骤，还做了很多其他的事情，例如：代码优化、整理等。
