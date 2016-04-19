@@ -27,7 +27,8 @@
 + [Node.js之events](https://github.com/swfbarhr/blog/blob/master/node/events.md)
 + [Node.js之Path](https://github.com/swfbarhr/blog/blob/master/node/path.md)
 + [Node.js之Query Strings&URL](https://github.com/swfbarhr/blog/blob/master/node/qs_url.md)
-+ [Node.js 之 Readline](https://github.com/swfbarhr/blog/blob/master/node/readline.md)
++ [Node.js之Readline](https://github.com/swfbarhr/blog/blob/master/node/readline.md)
++ [Node.js之Net](https://github.com/swfbarhr/blog/blob/master/node/net.md)
 
 ##### 联系我
 +  邮箱：swfbarhr@gmail.com
