@@ -29,6 +29,7 @@
 + [Node.js之Query Strings&URL](https://github.com/swfbarhr/blog/blob/master/node/qs_url.md)
 + [Node.js之Readline](https://github.com/swfbarhr/blog/blob/master/node/readline.md)
 + [Node.js之Net](https://github.com/swfbarhr/blog/blob/master/node/net.md)
++ [Node.js之Net](https://github.com/swfbarhr/blog/blob/master/node/stream-chapter1.md)
 
 ##### 联系我
 +  邮箱：swfbarhr@gmail.com
