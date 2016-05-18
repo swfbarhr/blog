@@ -30,6 +30,7 @@
 + [Node.js之Readline](https://github.com/swfbarhr/blog/blob/master/node/readline.md)
 + [Node.js之Net](https://github.com/swfbarhr/blog/blob/master/node/net.md)
 + [Node.js之Stream（一）](https://github.com/swfbarhr/blog/blob/master/node/stream-chapter1.md)
++ [Node.js之Stream（二）](https://github.com/swfbarhr/blog/blob/master/node/stream-chapter2.md)
 
 ##### 联系我
 +  邮箱：swfbarhr@gmail.com
