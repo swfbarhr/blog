@@ -1,6 +1,6 @@
 + [关于我](README.md)
 + [JavaScript之作用域](scope.md)
- + [JavaScript之闭包](closure.md)
++ [JavaScript之闭包](closure.md)
 + [JavaScript之编译](compile.md)
 + [JavaScript之this](this.md)
 + [JavaScript之基本类型](type.md)
