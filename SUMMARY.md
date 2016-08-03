@@ -12,7 +12,7 @@
 
 ##### 目录
 
-+ [JavaScript之作用域](https://github.com/swfbarhr/blog/blob/master/scope.md)
++ [JavaScript之作用域](scope.md)
 + [JavaScript之闭包](https://github.com/swfbarhr/blog/blob/master/closure.md)
 + [JavaScript之编译](https://github.com/swfbarhr/blog/blob/master/compile.md)
 + [JavaScript之this](https://github.com/swfbarhr/blog/blob/master/this.md)
