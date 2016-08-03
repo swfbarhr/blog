@@ -10,30 +10,7 @@
 ##### 目标
 &nbsp;俺的目标是可以成为全栈开发，通吃前后端（最好可以玩APP，好像比较难哦）。
 
-##### 目录
-
-+ [JavaScript之作用域](https://github.com/swfbarhr/blog/blob/master/scope.md)
-+ [JavaScript之闭包](https://github.com/swfbarhr/blog/blob/master/closure.md)
-+ [JavaScript之编译](https://github.com/swfbarhr/blog/blob/master/compile.md)
-+ [JavaScript之this](https://github.com/swfbarhr/blog/blob/master/this.md)
-+ [JavaScript之基本类型](https://github.com/swfbarhr/blog/blob/master/type.md)
-+ [JavaScript之object](https://github.com/swfbarhr/blog/blob/master/object.md)
-+ [JavaScript之prototype](https://github.com/swfbarhr/blog/blob/master/prototype.md)
-+ [Node.js之HTTP](https://github.com/swfbarhr/blog/blob/master/node/http.md)
-+ [Node.js之console](https://github.com/swfbarhr/blog/blob/master/node/console.md)
-+ [Node.js之Buffer（一）](https://github.com/swfbarhr/blog/blob/master/node/buffer-chapter1.md)
-+ [Node.js之Buffer（二）](https://github.com/swfbarhr/blog/blob/master/node/buffer-chapter2.md)
-+ [Node.js之util](https://github.com/swfbarhr/blog/blob/master/node/util.md)
-+ [Node.js之events](https://github.com/swfbarhr/blog/blob/master/node/events.md)
-+ [Node.js之Path](https://github.com/swfbarhr/blog/blob/master/node/path.md)
-+ [Node.js之Query Strings&URL](https://github.com/swfbarhr/blog/blob/master/node/qs_url.md)
-+ [Node.js之Readline](https://github.com/swfbarhr/blog/blob/master/node/readline.md)
-+ [Node.js之Net](https://github.com/swfbarhr/blog/blob/master/node/net.md)
-+ [Node.js之Stream（一）](https://github.com/swfbarhr/blog/blob/master/node/stream-chapter1.md)
-+ [Node.js之Stream（二）](https://github.com/swfbarhr/blog/blob/master/node/stream-chapter2.md)
-+ [Node.js之Stream（三）](https://github.com/swfbarhr/blog/blob/master/node/stream-chapter3.md)
-
 ##### 联系我
 +  邮箱：swfbarhr@gmail.com
 +  github：https://github.com/swfbarhr
-+  博客：http://sunweifeng.cn
++  博客：https://swfbarhr.gitbooks.io/erblog/content/
