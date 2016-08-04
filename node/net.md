@@ -70,7 +70,7 @@ net.connect({
 ```
 分别运行上面的服务器和客户端代码，效果如下：
 
-![老婆身体健康，宝宝快快成长](https://www.sunweifeng.cn/content/images/manual/client_server_connect.png)
+![老婆身体健康，宝宝快快成长](../file/client_server_connect.png)
 
 另外这个方法还有简单版本，不需要配置options。
 
@@ -565,4 +565,4 @@ console.log(net.isIPv6('2001:0DB8:02de::0e13')); // true
 讲到这里，net模块就讲完了。其实与其他语言比较起来，使用node来做socket代码非常简洁并且天生异步的模式也非常符合生产环境使用。
 
 ##### 题外话
-这边博客与上一篇间隔时间很长，大概有20多天的样子。期间忙于公司的事情与自我学习（主要是docker方向的），并且看到在[cnode](https://cnodejs.org/)已经有人在写关于node源码的文章了，所以我觉得关于node源码的部分我不全部讲解，只是在个别模块与注意点上写几篇跟人观点。另外本文也会在我的[博客](https://www.sunweifeng.cn/node-net/)上同步访问。
+这边博客与上一篇间隔时间很长，大概有20多天的样子。期间忙于公司的事情与自我学习（主要是docker方向的），并且看到在[cnode](https://cnodejs.org/)已经有人在写关于node源码的文章了，所以我觉得关于node源码的部分我不全部讲解，只是在个别模块与注意点上写几篇跟人观点。
