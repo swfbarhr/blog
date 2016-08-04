@@ -155,4 +155,4 @@ console.log(url.resolve('http://example.com/one', 'http://ssss.com/one/one/two')
 ```
 
 ##### 总结
-Query Strings模块和URL模块其实都是非常实用的两个模块，但是由于我们做node一般都使用第三方框架，如：express、koa、restify等。里面都已经封装好了对应的方法，所以这两个模块可能在实际开发中用到的不多，但是在做node原生开发时（不使用第三方框架），会非常有用。本文也会在我的[博客](https://www.sunweifeng.cn/node-querystrings-url/)上同步更新，欢迎访问。
+Query Strings模块和URL模块其实都是非常实用的两个模块，但是由于我们做node一般都使用第三方框架，如：express、koa、restify等。里面都已经封装好了对应的方法，所以这两个模块可能在实际开发中用到的不多，但是在做node原生开发时（不使用第三方框架），会非常有用。
