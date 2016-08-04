@@ -177,4 +177,4 @@ B.js（B.js引用了A.js）
 以上内容只介绍了Object.create和Object.defineProperty、Object.assign三个方法，object对象还有很多其他实用的方法。例如：Object.freeze、Object.seal、Object.prototype.hasOwnProperty等等，都是会在日常开发过程中用到的。这里就不一一介绍，有兴趣的话可以参考JavaScript规范。
 
 ##### 总结
-可能我们在日常的coding业务时，不需要使用特别复杂的Object方法，但是对于一个框架与底层的开发人员来说，这些都是需要掌握的。另外本文也会在我的[博客](http://www.sunweifeng.cn/javascript-object/)上同步更新，欢迎访问。
+可能我们在日常的coding业务时，不需要使用特别复杂的Object方法，但是对于一个框架与底层的开发人员来说，这些都是需要掌握的。
