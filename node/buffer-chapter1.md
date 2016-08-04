@@ -96,4 +96,3 @@ console.log(bfToStr.toString('ascii')); // lm
 ```
 
 ##### 未完待续
-本文也会在我的[博客](https://www.sunweifeng.cn/node-buffer-chapter1)上同步更新，欢迎访问。
