@@ -232,4 +232,4 @@ writableStream.on('finish', function() {
 + error 写入或者pipe数据时出错时，触发此事件（是可读流的'error'事件类似）
 
 # 总结
-stream在整个node的核心模块运用都非常广泛，例如：http模块、File System模块等。这说明此模块地位非常重要，并且当我们需要处理大文件时，通常第一个想到的也是stream模块。所以，少年！好好学习，天天向上吧！另外本文也会在我的[博客](https://www.sunweifeng.cn/nodejs-stream-chapter1/)上同步更新，欢迎访问。
+stream在整个node的核心模块运用都非常广泛，例如：http模块、File System模块等。这说明此模块地位非常重要，并且当我们需要处理大文件时，通常第一个想到的也是stream模块。所以，少年！好好学习，天天向上吧！
