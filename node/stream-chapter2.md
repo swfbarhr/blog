@@ -1,5 +1,5 @@
 # 前言
-[上一篇](https://github.com/swfbarhr/blog/blob/master/node/stream-chapter1.md)博客中，我们介绍了stream的基本用法，今天我们来讲讲stream接口如何实现，之后我们就可实现自己的stream类了。
+[上一篇](stream-chapter1.md)博客中，我们介绍了stream的基本用法，今天我们来讲讲stream接口如何实现，之后我们就可实现自己的stream类了。
 
 # stream.Readable
 简单来说，如果需要自定义stream.Readable类，那么我们需要做的就是一件事：重写_read方法。
@@ -224,4 +224,4 @@ myTrans.on('finish', function() {
 ```
 
 # 总结
-关于stream第二部分，到这里就算是介绍完了。自定义的stream类只需要我们按照实现规则，去丰富不同的内部方法而已。这些对于混迹于JavaScript界的老司机来说，是一件非常轻松的事情，但是我们需要理解stream并融会贯通之后再来做这些事情的话，又会有另一层理解。另外本文也会在我的[博客](https://www.sunweifeng.cn/nodejs-stream-chapter2/)上同步更新，欢迎访问。
+关于stream第二部分，到这里就算是介绍完了。自定义的stream类只需要我们按照实现规则，去丰富不同的内部方法而已。这些对于混迹于JavaScript界的老司机来说，是一件非常轻松的事情，但是我们需要理解stream并融会贯通之后再来做这些事情的话，又会有另一层理解。
