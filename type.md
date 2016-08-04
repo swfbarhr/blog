@@ -89,9 +89,9 @@ console.log(typeof null); // object
 
 按照道理应该显示null才对，现在却打印了object。这其实是JavaScript的一个隐形的BUG，在JavaScript设计之初，JavaScript中的值是由两部分组成：一部分是表示类型的标签，另一部分表示值。然后null表示的空指针在大多数平台下都是0x00，与JavaScript中object标签值0正好一样。所以typeof null的结果是“object”（有人提出在ES2015中修复这个BUG，但是后来被否决了）。下图展示了type各种类型的结果：
 
-![typeof](http://120.27.119.47/content/images/manual/typeof.png)
+![typeof](./file/typeof.png)
 
 所以我们在用typeof的时候，最好加入其它判断条件一起判断。
 
 ##### 总结
-好了，JavaScript的基本类型其实就6种，只要搞清楚这其中哪里有坑，下次再coding的时候就不会莫名其妙的掉进去了。由于object我会在以后专门写一篇博客来讲（因为object实在太强大了，作为一部分讲会贬低了它）。另外本文会同步更新到我的[博客](http://sunweifeng.cn/javascript-type/)上，欢迎访问。
+好了，JavaScript的基本类型其实就6种，只要搞清楚这其中哪里有坑，下次再coding的时候就不会莫名其妙的掉进去了。由于object我会在以后专门写一篇博客来讲（因为object实在太强大了，作为一部分讲会贬低了它）。
