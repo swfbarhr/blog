@@ -109,7 +109,7 @@ rl.prompt();
 
 以上代码的效果如下：
 
-![rl.prompt](https://www.sunweifeng.cn/content/images/manual/rl_prompt.png)
+![rl.prompt](../file/rl_prompt.png)
 
 ##### rl.question(query, callback)
 此方法就是我在最开始使用的引入示例，此方法的功能就是先输出query，然后接收用户输入的内容，当检测到用户输入回车时，调用callback并且将用户刚刚输入的内容以回调参数的形式给出，过多的示例我就不举了，上面“2B”示例已经很2了，不想再2一次了。
@@ -193,4 +193,4 @@ rl.on('SIGINT', function(){
 
 
 ##### 总结
-此模块不是一个非常常用的模块，但是我们可以利用此模块写出很好玩的程序，例如：一个简单的终端程序，或者可以整一下不懂程序的同学。另外本文也会在我的[博客](https://www.sunweifeng.cn/node-readline/)上同步更新，欢迎访问。
+此模块不是一个非常常用的模块，但是我们可以利用此模块写出很好玩的程序，例如：一个简单的终端程序，或者可以整一下不懂程序的同学。
