@@ -1,11 +1,11 @@
 ##### Object续
-在[JavaScript之object](https://github.com/swfbarhr/blog/blob/master/object.md)一文中，我简单介绍了object几个常用的方法。之所有此篇博客第一个小标题叫做"Object续"，其实是因为我马上要讲的prototype是object的一个很重要的属性或者说是概念。可以说，如果JavaScript没有prototype这个思想的话，早就被世上的程序猿们所抛弃，还不知道在哪个犄角旮旯中哭泣呢。这就说明了prototype的对于JavaScript语言本身的重要性，很多东西需要靠prototype实现。
+在[JavaScript之object](object.md)一文中，我简单介绍了object几个常用的方法。之所有此篇博客第一个小标题叫做"Object续"，其实是因为我马上要讲的prototype是object的一个很重要的属性或者说是概念。可以说，如果JavaScript没有prototype这个思想的话，早就被世上的程序猿们所抛弃，还不知道在哪个犄角旮旯中哭泣呢。这就说明了prototype的对于JavaScript语言本身的重要性，很多东西需要靠prototype实现。
 
 ##### 什么是prototype
 很多程序猿都知道prototype是什么概念，可能有很大部分人也是似懂非懂（包括几个月前的俺）。大家都会说，prototype不就是原型嘛，有什么难的。我之前也是这么认为的，但是如果真的要说出个所以然来的时候，却不知道从何说起。prototype其实就是一个对象对另一个对象的引用。
 
 ##### 原型链
-原型链跟之前我在[JavaScript之作用域](https://github.com/swfbarhr/blog/blob/master/scope.md)一文中提到的作用域链一样，都是逐层查找属性的。
+原型链跟之前我在[JavaScript之作用域](scope.md)一文中提到的作用域链一样，都是逐层查找属性的。
 
 ```js
 var a = {
@@ -185,4 +185,4 @@ dell.setDellScreen('21 inch'); // Dell's screen is 21 inch
 我们看到，dell对象没有setScreen方法，运用原型链查找规则，dell实现了setScreen的效果。换句话说，dell对象把setScreen方法委托给了原型computer来做，这样做就是所谓的委托。这么做我们既保留了原来类的“继承”效果，又不会有原型类中复杂的关系（由于这个关系过于复杂，以后有时间会更新一篇相关主题的博客）。
 
 ##### 总结
-到这里，prototype的简单介绍就完了。如果需要真正的深入了解，还需要我们在日常开发过程中积累，罗马也不是一天建成的，希望我的总结对大家学习JavaScript有帮助。JavaScript系列的博客到这就结束了，但是不代表完结，如果以后我对JavaScript有了新的理解，也会继续更新。预告下，下个系列是NODE.JS相关的博客，谈谈我个人对NODE.JS的理解。另外本文也会在我的[博客](http://www.sunweifeng.cn/javascript-prototype/)上同步更新，欢迎访问。
+到这里，prototype的简单介绍就完了。如果需要真正的深入了解，还需要我们在日常开发过程中积累，罗马也不是一天建成的，希望我的总结对大家学习JavaScript有帮助。JavaScript系列的博客到这就结束了，但是不代表完结，如果以后我对JavaScript有了新的理解，也会继续更新。预告下，下个系列是NODE.JS相关的博客，谈谈我个人对NODE.JS的理解。
