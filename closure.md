@@ -45,7 +45,7 @@ foob('Bob'); // hello Bob
 ```
 代码在执行过程中，fooa会把全局作用域的变量（可以认为fooa把全局作用的所有变量放入了一个堆栈里面以备用）引用至其作用域。同样的，fooa中return的匿名函数也会把fooa中的变量加入到这个“堆栈”中并且在其作用域中引用（如图1所示）。
 
-![scope chain](http://120.27.119.47/content/images/manual/scope_chain.png)
+![scope chain](./file/scope_chain.png)
 
 其实在执行foob时，fooa的运行状态已经不存在了，之所以foob中能访问fooa的变量就是因为foob保存了对fooa作用域变量的引用，这样foob可以在需要时取出fooa中的变量来使用，也就是我们常说的：产生了闭包。（哎妈呀！原来如此！）闭包就是这么简单！
 
