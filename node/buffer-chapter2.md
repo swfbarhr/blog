@@ -160,4 +160,4 @@ console.log(bfFill2.toString()); // aaaaaa
 如果不指定offset和end，那么fill方法会把当前Buffer实例填满。
 
 ##### 总结
-好了，Buffer模块介绍到这里就介绍完了。此模块的方法很多，但是大多数都是读取和写入的方法，形式都差不多。只要我们掌握了一个，其他的稍稍看下API就可以轻松使用了。另外本文也会在我的[博客](https://www.sunweifeng.cn/node-buffer-chapter2)上同步更新，欢迎star和issue。
+好了，Buffer模块介绍到这里就介绍完了。此模块的方法很多，但是大多数都是读取和写入的方法，形式都差不多。只要我们掌握了一个，其他的稍稍看下API就可以轻松使用了。
