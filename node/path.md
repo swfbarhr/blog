@@ -137,4 +137,4 @@ console.log(path.extname('/ab/c.')); // .
 + path.delimiter 路径分割符号，一般在Windows是分号，在linux是冒号，用于分割多个路径
 
 ##### 总结
-path模块非常简单，此模块专注于路径（也就是字符串）的特殊处理。另外本文也会在我的[博客](https://www.sunweifeng.cn/node-path/)上同步更新，欢迎访问。
+path模块非常简单，此模块专注于路径（也就是字符串）的特殊处理。
