@@ -38,7 +38,7 @@ console.log(util.format(1,2,3); // 1 2 3
 ```
 
 ##### util.debug(string)
-在打印的字符串之前添加“DEBUG:”字样，就如我在[Node.js之console](https://github.com/swfbarhr/blog/blob/master/node/console.md)一文中提到的一样，util.debug会将输出的信息记录到错误日志文件中去，如果没有指定错误文件，那么就会直接输出到控制台
+在打印的字符串之前添加“DEBUG:”字样，就如我在[Node.js之console](console.md)一文中提到的一样，util.debug会将输出的信息记录到错误日志文件中去，如果没有指定错误文件，那么就会直接输出到控制台
 
 ```js
 var util = require('util');
@@ -97,9 +97,9 @@ util.log('我是一条日志！'); // 29 Feb 15:50:34 - 我是一条日志！
 ```
 
 ##### util.inspect(object, [options])
-这个函数我们在[Node.js之console](https://github.com/swfbarhr/blog/blob/master/node/console.md)一文中也提到过，功能我就不多做介绍。第一个参数应该没什么异议，第二个参数是可选配置项，通过传入不同的option值，会有不同的效果，下面就来介绍下这个option：
+这个函数我们在[Node.js之console](console.md)一文中也提到过，功能我就不多做介绍。第一个参数应该没什么异议，第二个参数是可选配置项，通过传入不同的option值，会有不同的效果，下面就来介绍下这个option：
 
-+ showHidden表示是否要返回不可枚举选项，我们在[JavaScript之object](https://github.com/swfbarhr/blog/blob/master/object.md)提到过，object对象的属性可以设置为“不可枚举”，这样我们的for...in结构就不能访问了。这里也是一样，showHidden默认是false，也就是说使用util.inspect时，默认不返回不可枚举属性的：
++ showHidden表示是否要返回不可枚举选项，我们在[JavaScript之object](../object.md)提到过，object对象的属性可以设置为“不可枚举”，这样我们的for...in结构就不能访问了。这里也是一样，showHidden默认是false，也就是说使用util.inspect时，默认不返回不可枚举属性的：
 
 ```js
 var util = require('util');
@@ -122,7 +122,7 @@ console.log('strObjShow is %s', strObjShow); // strObjShow is { enumerable_prop:
 console.log('strObjHide is %s', strObjHide); // strObjHide is { enumerable_prop: 'a' }
 ```
 
-+ depth表示深度，我们在[Node.js之console](https://github.com/swfbarhr/blog/blob/master/node/console.md)介绍过，这里就不再赘述。
++ depth表示深度，我们在[Node.js之console](console.md)介绍过，这里就不再赘述。
 
 + colors 可以在控制台输出有颜色的对象（并且颜色是可以自定义的）
 
@@ -134,7 +134,7 @@ console.log(util.inspect({a:1, b:'123'}, {colors: true})); // { a: 1, b: '123' }
 
 以上代码的实际效果如下：
 
-![inspect-colors](https://www.sunweifeng.cn/content/images/manual/inspect_colors.PNG)
+![inspect-colors](../file/inspect_colors.PNG)
 
 + customInspect如果我们在对象像定义inspect方法，那么util.inspect就会直接调用该对象的inspect方法，如果将customInspect设置为false，则将依旧调用node定义的方法：
 
@@ -162,4 +162,4 @@ console.log(util.inspect(obj, {customInspect: false})); // { name: '张三', ins
 虽然我们可以手动做JavaScript的“继承”，但是node还是给出了实用的工具函数。但是我在这里不做介绍，我会把此方法放到events模块一起介绍。
 
 ##### 总结
-总的来说，介绍API是比较枯燥的（我也觉得）。大家可以作为知识点学习学习，熟悉熟悉，为以后工作中遇到的问题打打基础。另外之前我在[v站](http://v2ex.com)上发的帖子很多人回复，非常感谢大家给我的建议，我会坚持写技术博客的。本文也会在我的[博客](https://www.sunweifeng.cn/node-util/)上同步更新，欢迎访问。
+总的来说，介绍API是比较枯燥的（我也觉得）。大家可以作为知识点学习学习，熟悉熟悉，为以后工作中遇到的问题打打基础。另外之前我在[v站](http://v2ex.com)上发的帖子很多人回复，非常感谢大家给我的建议，我会坚持写技术博客的。
