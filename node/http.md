@@ -1,4 +1,4 @@
-![nodejs，祝老婆大人、爸妈、岳父岳母身体健康，宝宝健康成长。新年快乐！](https://www.sunweifeng.cn/content/images/manual/nodejs.jpg)
+![nodejs，祝老婆大人、爸妈、岳父岳母身体健康，宝宝健康成长。新年快乐！](../file/nodejs.jpg)
 ##### 前言
 在开始node.js（以后简称node）之前，我犹豫了好久：到底我第一篇用什么主题开始，是node的整体框架还是Hello world还是一堆废话呢。最后我决定还是直接上API，简单粗暴有效果，因为大家用node除了node有强大的社区之外，还因为node的API简单易用，容易上手。OK，下面我们就开始node之旅。
 
@@ -180,4 +180,4 @@ req.end();
 + http.ServerResponse的setTimeout方法，设置响应超时。如果没有设置的话，只能等待socket或服务器超时。（还有很多方法和事件。就不一一列举了。）
 
 ##### 总结
-在node v0.10.x时代，HTTP模块的稳定系数就已经是3了（一般node的API有4个级别，分别是：Deprecated-0、Experimental-1、Stable-2、Locked-3）.所以说HTTP模块的API非常基础和稳定的。我们使用HTTP模块时，可以很放心的使用其方法和事件，不必担心版本兼容问题。需要提到的是，学习node的最好最捷径的方法就是学会读官方API，官方API虽然是英文的，但是里面的解释和英文单词都是很戳中要点和易于理解的。另外本文也会在我的[博客](https://www.sunweifeng.cn/node-http/)上同步更新，欢迎访问。
+在node v0.10.x时代，HTTP模块的稳定系数就已经是3了（一般node的API有4个级别，分别是：Deprecated-0、Experimental-1、Stable-2、Locked-3）.所以说HTTP模块的API非常基础和稳定的。我们使用HTTP模块时，可以很放心的使用其方法和事件，不必担心版本兼容问题。需要提到的是，学习node的最好最捷径的方法就是学会读官方API，官方API虽然是英文的，但是里面的解释和英文单词都是很戳中要点和易于理解的。
