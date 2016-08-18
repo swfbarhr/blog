@@ -23,7 +23,7 @@ server.listen(8008, function(){
 
 运行以上代码，就会开启本机8008端口的TCP监听，当有客户端连接上来就会打印指定字符串："有客户端连接！"（效果如下图）。
 
-![老婆身体健康，宝宝快快成长](https://www.sunweifeng.cn/content/images/manual/net_createserver.png)
+![老婆身体健康，宝宝快快成长](../file/net_createserver.png)
 
 ##### net.connect(options, [connectionListener])、net.createConnection(options, [connectionListener])
 这2个方法是一个实现逻辑，其实就是一个方法，node源码是这么写的：
