@@ -83,7 +83,7 @@ function getAccessToken(appID, appSecret, callback) {
 
 以上思路的实现代码大致如下：
 
-1.第一步需要坐的就是从判断access_token是否过期（为了方便起见，直接用appID + appSecret作为存储access_token的键）：从redis获取键为access_token的内容，因为我们在设置access_token时，是将其设为了过期键（设置过程涉及到锁，将在之后给出），所以只要能取到值，就说明access_token没有过期。代码如下：
+1.第一步需要做的就是从判断access_token是否过期（为了方便起见，直接用appID + appSecret作为存储access_token的键）：从redis获取键为access_token的内容，因为我们在设置access_token时，是将其设为了过期键（设置过程涉及到锁，将在之后给出），所以只要能取到值，就说明access_token没有过期。代码如下：
 
 ```js
 function isValid(appID, appSecret, callback) {
