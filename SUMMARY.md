@@ -21,4 +21,5 @@
 * [Node.js之Stream（一）](node/stream-chapter1.md)
 * [Node.js之Stream（二）](node/stream-chapter2.md)
 * [Node.js之Stream（三）](node/stream-chapter3.md)
+* Node.js之高并发下微信access_token的存储与更新
 
