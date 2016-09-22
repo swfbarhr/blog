@@ -120,7 +120,7 @@ function releaseLock(callback) {
 * 2).第二步我们需要订阅redis的new_token和new_token_err频道
 * 3).第三步判断access_token是否过期
 * 4).如果过期，就尝试去获取锁权限
-* 5).如果获取锁失败，就什么都不做，等待事件触发；如果获取锁权限成功后，就可以请求微信服务器来获取新的access_token，当获得新的access_token之后将其更新到redis中，并且设置合理的过期过期时间
+* 5).如果获取锁失败，就什么都不做，等待事件触发；如果获取锁权限成功后，就可以请求微信服务器来获取新的access_token，当获得新的access_token之后将其更新到redis中，并且设置合理的过期时间
 * 6).释放锁并且发出通知
 ```js
 function getAccessToken(appID, appSecret, callback) {
