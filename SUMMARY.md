@@ -1,7 +1,6 @@
 # Summary
 
 * [关于我](README.md)
-   * Node.js之高并发下微信access_token存储与更新
 * [JavaScript之作用域](scope.md)
 * [JavaScript之闭包](closure.md)
 * [JavaScript之编译](compile.md)
