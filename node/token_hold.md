@@ -27,7 +27,7 @@ var access_token, flag;
 function TokenEmitter() {
   Emitter.call(this);
 }
-util.inherit(TokenEmitter, Emitter);
+util.inherits(TokenEmitter, Emitter);
 
 myEmitter = new TokenEmitter();
 // 消除警告
