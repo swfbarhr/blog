@@ -207,6 +207,8 @@ function getAccessToken(appID, appSecret, callback) {
   setTimeout(function () {
     callback(null, new Error('time out'));
   }, 2000);
+  
+  // ...
 }
 ```
 
