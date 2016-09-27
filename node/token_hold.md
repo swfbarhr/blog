@@ -190,8 +190,19 @@ function getAccessToken(appID, appSecret, callback) {
 
 ```js
 function aquireLock(callback) {
-  redis.watch('lock');
-  redis.multi().setnx('lock').expire('lock', 2).exec(callback);
+  redis.setnx('lock', function(err, result){
+    if(err){
+      return callback(err);
+    }
+    
+    expire('lock', 2, function(err, success){
+      if(err){
+        return callback(err);
+      }
+      
+      callback(null, true);
+    });
+  });
 }
 ```
 由于设置锁和设置锁的过期时间需要同一时间完成，所以这里我使用了redis的事务来保证了原子性。
