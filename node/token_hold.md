@@ -195,7 +195,7 @@ function aquireLock(callback) {
       return callback(err);
     }
     
-    expire('lock', 2, function(err, success){
+    redis.expire('lock', 2, function(err, success){
       if(err){
         return callback(err);
       }
