@@ -22,4 +22,4 @@
 * [Node.js之Stream（二）](node/stream-chapter2.md)
 * [Node.js之Stream（三）](node/stream-chapter3.md)
 * [Node.js之高并发下微信access_token的存储与更新](node/token_hold.md)
-
+* [微信公众号之开篇](wechat/mp/start.md)
