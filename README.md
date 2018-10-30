@@ -8,9 +8,6 @@
 + 2012年6月-2016年7月 做一些框架和底层类的工作，并潜心研究JavaScript。
 + 2016年7月-至今 供职于上海一家互联网P2P公司。
 
-##### 目标
-&nbsp;俺的目标是可以成为全栈开发，通吃前后端（最好可以玩APP，好像比较难哦）。
-
 ##### 联系我
 +  邮箱：swfbarhr@gmail.com
 +  github：https://github.com/swfbarhr
