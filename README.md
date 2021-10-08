@@ -12,10 +12,10 @@
 
 ##### 博客指引
 此博客大致分为几部分：
-* 1. [JavaScript基础学习心得](https://github.com/swfbarhr/blog) 
-* 2. [node的基本使用](https://github.com/swfbarhr/blog/tree/master/node) 
-* 3. [公众号部分](https://github.com/swfbarhr/blog/tree/master/wechat/mp) 
-* 4. [蹩脚的v8.blog文章翻译](https://github.com/swfbarhr/blog/tree/master/v8.dev)
+* [JavaScript基础学习心得](https://github.com/swfbarhr/blog) 
+* [node的基本使用](https://github.com/swfbarhr/blog/tree/master/node) 
+* [公众号部分](https://github.com/swfbarhr/blog/tree/master/wechat/mp) 
+* [蹩脚的v8.blog文章翻译](https://github.com/swfbarhr/blog/tree/master/v8.dev)
 
 ##### 联系我
 +  邮箱：swfbarhr@gmail.com
