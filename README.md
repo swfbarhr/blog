@@ -11,7 +11,6 @@
 + 2020年6月-至今 被朋友忽悠进了工程行业，开始接触工程建设解决方案。
 
 ##### 博客指引
-此博客大致分为几部分：
 * [JavaScript基础学习心得](https://github.com/swfbarhr/blog) 
 * [node的基本使用](https://github.com/swfbarhr/blog/tree/master/node) 
 * [公众号部分](https://github.com/swfbarhr/blog/tree/master/wechat/mp) 
