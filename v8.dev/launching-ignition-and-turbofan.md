@@ -4,10 +4,10 @@
 
 这条新的执行流建立在 V8 的解释器 Ignition 和 V8 的最新优化编译器 TurboFan 的基础之上。对于一直关注我们 V8 blog 的同学来说，这些技术应该还是比较熟悉的，但是切换到新的执行流对于 Ignition 和 TurboFan 都是一个重大的里程碑。
 
-<img src="file/v8-ignition.svg" height="256" width="256" style="display:block;margin:0 auto;">
+<img src="../file/v8-ignition.svg" height="256" width="256" style="display:block;margin:0 auto;">
 <p style="width:205px;display:block;margin:0 auto 20px auto;">Ignition logo，V8新解释器</p>
 
-<img src="file/v8-turbofan.svg" height="256" width="256" style="display:block;margin:0 auto;">
+<img src="../file/v8-turbofan.svg" height="256" width="256" style="display:block;margin:0 auto;">
 <p style="width:235px;display:block;margin:0 auto 20px auto;">TurboFan logo，V8新优化编译器</p>
 
 V8 v5.9 中的全面并且仅仅使用 Ignition 和 TurboFan 还是历史首次。并且从 v5.9 开始，Full-codegen 和 Crankshaft（从 2010 年开始服务于 V8 的技术）将不再使用于 V8 的 JavaScript 执行管道，从此它们将不会与新的语言特新和优化需求保持同步更新。我们打算尽快将它们完全移除，这就意味着 V8 将会朝着一个更加简单、更加可维护的方向发展。
@@ -32,14 +32,14 @@ V8 Ignition 解释器最初的背后动机是降低在移动设备上的内存�
 
 V8 团队使用 Telemetry - Catapult 框架来持续监控显示世界 V8 的性能表现。之前我们在博客中讨论过为什么使用来自现实世界的数据来驱动我们的性能优化工作是如此重要以及我们是如何使用 WebPageReplay 与 Telemetry 一起工作的。切换到 Ignition 和 TurboFan 展示了现实世界测试用例的性能提升。特别是新的管道显著加快了著名网站的用户交互测试速度。
 
-<img src="file/improvements-per-website.png" height="478" width="100%" style="display:block;margin:0 auto;">
+<img src="../file/improvements-per-website.png" height="478" width="100%" style="display:block;margin:0 auto;">
 <p style="width:205px;display:block;margin:0 auto 20px auto;">用户交互基准测试V8的时间消耗</p>
 
 尽管 Speedometer 使用的合成的基准测试，不过我们之前已经揭示过，与其他合成的基准相比，它在现在 JavaScript 工作负载方面的表现更接近现实世界。切换到 Ignition 和 TurboFan，V8 的 Speedometer 跑分根据平台和设备的不同有 5%-10%的提升。
 
 新的管道也加快了服务端 JavaScript 速度。AcmeAir：Node.js 的基准测试，模拟虚拟管道的后端实现，在使用 V8 v5.9 后使速度加快了 10%。
 
-<img src="file/benchmark-scores.png" height="478" width="100%" style="display:block;margin:0 auto;">
+<img src="../file/benchmark-scores.png" height="478" width="100%" style="display:block;margin:0 auto;">
 <p style="width:205px;display:block;margin:0 auto 20px auto;">在web和Node.js上的基准测试提升</p>
 
 Ignition 与 TurboFan 同时也减少了 V8 的内存占用。在 Chrome M59，新的流程缩减了桌面程序和高端移动设备 V8 的内存约 5%-10%。这个减少（5%-10%）是之前在本博客提到过的 Ignition 对于 V8 所支持的所有设备和平台内存节省（策略）的结果。
